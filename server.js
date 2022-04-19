@@ -93,7 +93,7 @@ const responseListener = async (req, res) => {
     req.on('end', async () => {
       try {
         const data = JSON.parse(body)
-        const post = await Post.findByIdAndUpdate(id, data)
+        const post = await Post.findByIdAndUpdate(id, { $set: data })
         if (post) {
           res.writeHeader(200, headers)
           res.write(
