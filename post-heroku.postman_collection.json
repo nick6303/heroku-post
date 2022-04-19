@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "76c1152a-258e-4daf-ae64-112a4211dd9d",
+		"name": "post-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://shielded-woodland-12248.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"shielded-woodland-12248",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test\",\r\n    \"content\": \"哈哈哈\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shielded-woodland-12248.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"shielded-woodland-12248",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有posts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://shielded-woodland-12248.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"shielded-woodland-12248",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得單筆post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://shielded-woodland-12248.herokuapp.com/posts/625eb64985ddb4dcb5cc102d",
+					"protocol": "https",
+					"host": [
+						"shielded-woodland-12248",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"625eb64985ddb4dcb5cc102d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆post",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test\",\r\n    \"content\": \"test123564654\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shielded-woodland-12248.herokuapp.com/posts/625ebe342385da842c3c2e4b",
+					"protocol": "https",
+					"host": [
+						"shielded-woodland-12248",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"625ebe342385da842c3c2e4b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://shielded-woodland-12248.herokuapp.com/posts/625ec913e28a1fca441e24f1",
+					"protocol": "https",
+					"host": [
+						"shielded-woodland-12248",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"625ec913e28a1fca441e24f1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
