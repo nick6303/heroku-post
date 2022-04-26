@@ -146,6 +146,7 @@ const responseListener = async (req, res) => {
         message: '查無此頁面',
       })
     )
+    res.end()
   }
 }
 
